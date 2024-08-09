@@ -6,9 +6,6 @@ on:
 jobs:
   ci-test:
     name: CI / Test
-    permissions:
-      contents: read
-      pull-requests: write
     uses: ddalpian/workflow-templates/.github/workflows/ci-test.yaml@master
     with:
       framework: python/pytest
