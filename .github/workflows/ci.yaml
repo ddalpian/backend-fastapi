@@ -5,8 +5,8 @@ on:
     branches: ["master"]
 
 jobs:
-  ci-ruby:
-    name: CI
+  ci-python:
+    name: Python
     uses: ddalpian/workflow-templates/.github/workflows/python-ci-pipeline.yaml@master
     with:
       python-version: 3.12 # Required
