@@ -1,0 +1,15 @@
+name: CI
+
+on: workflow_dispatch
+
+jobs:
+  ci-ruby:
+    name: CI
+    uses: ddalpian/workflow-templates/.github/workflows/ci.yaml@master
+    with:
+      language: python # Required [ruby | python | javascript]
+      version: 3.12 # Required
+      lint-framework: pylint # Required [rubocop | pylint | eslint]
+      lint-active: true # Optional [Default = true]
+      test-framework: pytest # [rspec | pytest | testing-library]
+      test-active: true # Optional [Default = true]
