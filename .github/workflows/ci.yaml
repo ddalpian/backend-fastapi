@@ -7,11 +7,8 @@ on:
 jobs:
   ci-ruby:
     name: CI
-    uses: ddalpian/workflow-templates/.github/workflows/ci.yaml@master
+    uses: ddalpian/workflow-templates/.github/workflows/python-ci-pipeline.yaml@master
     with:
-      language: python # Required [ruby | python | javascript]
-      version: 3.12 # Required
-      lint-framework: pylint # Required [rubocop | pylint | eslint]
+      python-version: 3.12 # Required
       lint-active: true # Optional [Default = true]
-      test-framework: pytest # [rspec | pytest | testing-library]
       test-active: true # Optional [Default = true]
